@@ -24,7 +24,7 @@ pipeline {
         bat 'sc stop Tomcat9.0'
         //bat 'ping 127.0.0.1 -n 6'
         // copy war file from build target to webapp Tomcat folder
-        bat 'xcopy /y C:\\Windows\\System32\\config\\systemprofile\\.jenkins\workspace\\GOL_Pipeline\\gameoflife-web\\target\\gameoflife.war "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps"'
+        bat 'xcopy /y C:\\Windows\\System32\\config\\systemprofile\\.jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target\\gameoflife.war "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps"'
         //invoke command to start tomcat service      
         bat 'sc start Tomcat9.0'
       }
