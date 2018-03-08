@@ -29,7 +29,7 @@ pipeline {
         bat 'sc start Tomcat9.0'
       }
     } 
-
+  }
     
   } 
 }
