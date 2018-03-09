@@ -21,12 +21,12 @@ pipeline {
       // define step to run
       steps {
         //invoke command to stop tomcat service
-        sh 'stop Tomcat9.0'
+        sh 'Tomcat9.0'
         sh 'ping 127.0.0.1 -n 6'
         // copy war file from build target to webapp Tomcat folder
         sh 'cp /y root\\var\\lib\\jenkins\\workspace\\GOL_Pipeline\\gameoflife-web\\target\\gameoflife.war "\\opt\\tomcat\\webapps"'
         //invoke command to start tomcat service      
-        sh ' start Tomcat9.0'
+        sh ' Tomcat9.0'
       }
     } 
   
